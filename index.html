@@ -418,6 +418,65 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* Untuk background header kereta - kurangkan padding & gap bila skrin kecil */
+@media (max-width: 768px) {
+  .vehicle-headerSaga,
+  .vehicle-headerPersona,
+  .vehicle-headerIriz,
+  .vehicle-headerx50,
+  .vehicle-headerx70,
+  .vehicle-headerx90,
+  .vehicle-headers70 {
+    flex-direction: column;   /* susun menegak */
+    text-align: center;
+    padding: 40px;           /* kecilkan padding */
+    gap: 20px;               /* jarak kecil */
+  }
+
+  /* Table biar boleh scroll bila phone */
+  .pricing-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Testimoni grid kecil */
+  .testimoni-grid {
+    grid-template-columns: repeat(2, 1fr); /* phone: 2 gambar je satu row */
+  }
+}
+
+@media (max-width: 480px) {
+  .vehicle-headerSaga,
+  .vehicle-headerPersona,
+  .vehicle-headerIriz,
+  .vehicle-headerx50,
+  .vehicle-headerx70,
+  .vehicle-headerx90,
+  .vehicle-headers70 {
+    padding: 20px;  /* lebih kecil untuk skrin kecik */
+    gap: 10px;
+  }
+
+  .testimoni-grid {
+    grid-template-columns: 1fr; /* phone kecik: 1 gambar satu row */
+  }
+
+  .proton-logo {
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+  }
+
+  .company-title {
+    font-size: 20px;
+  }
+
+  .consultant-name {
+    font-size: 14px;
+  }
+}
+
     </style>
 </head>
 <body>
@@ -958,3 +1017,4 @@
 </body>
 
 </html>
+
