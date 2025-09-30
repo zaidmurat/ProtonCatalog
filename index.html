@@ -265,6 +265,31 @@
     font-size: 13px;
 }
 
+.profile-container {
+      margin-bottom: 20px;
+    }
+    
+    .profile-image {
+      max-width: 250px;
+      height: auto;
+      border-radius: 15px;
+      border: 5px solid #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    
+    .profile-image:hover {
+      transform: scale(1.05);
+    }
+    
+    .profile-name {
+      margin-top: 15px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
 
         .whatsapp-button {
             background: linear-gradient(135deg, #25d366, #128c7e);
@@ -1040,14 +1065,17 @@
   </div>
 </div>
 
-<!-- Section 3: Image + WhatsApp Button -->
-<div class="contact-section" style="text-align:center; margin-top:10px;"> <!-- tambah margin-top kecil -->
-  <!-- Gambar tanpa background -->
-  <div style="margin-bottom:0px;">
-    <img src="bgpicture2.png" 
-         alt="Zaid - Sales Consultant" 
-         style="max-width:200px;height:auto;border-radius:10px;">
-  </div>
+<!-- Section 3: Gambar + WhatsApp Button -->
+      <div class="contact-section">
+        <!-- Gambar dengan bingkai menarik -->
+        <div class="profile-container">
+          <img src="Pic1.jpg" 
+               alt="Zaid Murat - Sales Consultant Proton" 
+               class="profile-image">
+          <div class="profile-name">ZAID MURAT</div>
+          <div style="color:#fff; margin-top:5px; font-size:14px;">Sales Consultant Proton</div>
+        </div>
+
 
   <!-- WhatsApp Button -->
   <a href="https://wa.me/60189675443?text=Hi,%20saya%20berminat%20nak%20memiliki%20kereta%20Proton.%20Boleh%20Encik%20Zaid%20bantu%20saya%20hingga%20jadi%20kenyataan?"
@@ -1069,6 +1097,7 @@
 </body>
 
 </html>
+
 
 
 
