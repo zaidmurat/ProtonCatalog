@@ -1114,14 +1114,15 @@ function calculateLoan() {
   }
   
   // Formula: (Loan x Tahun x Interest + Loan) / 108
-  const monthlyPayment = (loan * years * interest + loan) / 108;
+  // Interest perlu convert dari % ke decimal (bahagi 100)
+  const interestDecimal = interest / 100;
+  const monthlyPayment = (loan * years * interestDecimal + loan) / 108;
   
   document.getElementById('monthlyPayment').textContent = 'RM ' + monthlyPayment.toFixed(2);
   document.getElementById('result').style.display = 'block';
 }
 </script>
-	   
-	   
+	   	   
 <!-- Testimoni Section -->
 <div class="testimoni-section">
   <h2 class="testimoni-title">Happy Customer, Happy Drive</h2>
@@ -1239,6 +1240,7 @@ function calculateLoan() {
 </body>
 
 </html>
+
 
 
 
