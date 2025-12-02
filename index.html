@@ -71,6 +71,25 @@
             margin-top: 5px;
         }
         
+        /* CONSULTANT INFO - HEADER UTAMA (DIBETULKAN) */
+        .consultant-header-top {
+            text-align: right;
+            line-height: 1.2;
+        }
+
+        .consultant-name-top {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333; /* Warna asal (Hitam) */
+        }
+
+        .consultant-role-top {
+            font-size: 14px;
+            color: #666; /* Warna kelabu lembut */
+            margin-left: 10px; /* Kekalkan margin kiri */
+        }
+
+        
         /* VEHICLE SECTIONS */
         .vehicle-section {
             background: white;
@@ -144,7 +163,7 @@
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
         }
         
-        /* CONSULTANT INFO */
+        /* CONSULTANT INFO - WITHIN VEHICLE HEADER */
         .consultant {
             text-align: right;
             line-height: 1.2;
@@ -227,7 +246,7 @@
             border: 3px solid #FFD700;
         }
         
-        /* TESTIMONI SECTION STYLING (DIBETULKAN) */
+        /* TESTIMONI SECTION STYLING */
         .testimoni-section {
             margin: 40px 0;
             text-align: center;
@@ -242,7 +261,7 @@
 
         .testimoni-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-fit untuk mobile */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px; 
             max-width: 1000px;
             margin: 0 auto;
@@ -258,7 +277,7 @@
         .testimoni-item img {
             width: 100%;
             height: auto;
-            max-height: 200px; /* Hadkan tinggi gambar */
+            max-height: 200px;
             object-fit: cover;
             border-radius: 8px;
             margin-bottom: 10px;
@@ -270,7 +289,7 @@
             color: #444; 
             margin-top: 5px;
             padding: 8px;
-            background: #e0f2fe; /* Background biru muda untuk highlight quote */
+            background: #e0f2fe;
             border-radius: 6px;
             border-left: 3px solid #3b82f6; 
             text-align: left;
@@ -377,6 +396,10 @@
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
+            .consultant-role-top {
+                margin-left: 0 !important; /* Buang margin untuk mobile */
+                display: block;
+            }
         }
 
         @media (max-width: 480px) {
@@ -396,17 +419,16 @@
 </head>
 <body>
     <div class="container">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:20px;">
-            <div style="display:flex; align-items:center; gap:10px;">
+        <div class="header"> <div style="display:flex; align-items:center; gap:10px;">
                 <img src="proton.png" alt="Proton Logo" style="width:60px; height:auto;">
                 <div>
                     <div style="font-size:20px; font-weight:bold;">PROTON SALES</div>
                     <div style="font-size:14px;">DIDI MOTORS SDN BHD</div>
                 </div>
             </div>
-            <div class="consultant">
-                <span class="consultant-name">ZAID MURAT</span>
-                <span class="consultant-role" style="margin-left:10px;">CAR SALES CONSULTANT</span>
+            <div class="consultant-header-top">
+                <span class="consultant-name-top">ZAID MURAT</span>
+                <span class="consultant-role-top">CAR SALES CONSULTANT</span>
             </div>
         </div>
 
@@ -415,6 +437,10 @@
                 <div class="vehicle-info">
                     <h2>SAGA</h2>
                     <p>Experince The Refinement</p>
+                </div>
+                <div class="consultant">
+                    <span class="consultant-name">ZAID MURAT</span>
+                    <span class="consultant-role">CAR SALES CONSULTANT</span>
                 </div>
             </div>
             <table class="pricing-table">
@@ -441,6 +467,10 @@
                     <h2>PERSONA</h2>
                     <p>Intelligence Cares</p>
                 </div>
+                <div class="consultant">
+                    <span class="consultant-name">ZAID MURAT</span>
+                    <span class="consultant-role">CAR SALES CONSULTANT</span>
+                </div>
             </div>
             <table class="pricing-table">
                 <thead class="table-header">
@@ -465,6 +495,10 @@
                 <div class="vehicle-info">
                     <h2>IRIZ</h2>
                     <p>Intelligence Excites</p>
+                </div>
+                <div class="consultant">
+                    <span class="consultant-name">ZAID MURAT</span>
+                    <span class="consultant-role">CAR SALES CONSULTANT</span>
                 </div>
             </div>
             <table class="pricing-table">
@@ -491,6 +525,10 @@
                     <h2>X-50</h2>
                     <p>Intelligence Amazes</p>
                 </div>
+                <div class="consultant">
+                    <span class="consultant-name">ZAID MURAT</span>
+                    <span class="consultant-role">CAR SALES CONSULTANT</span>
+                </div>
             </div>
             <table class="pricing-table">
                 <thead class="table-header">
@@ -515,6 +553,10 @@
                 <div class="vehicle-info">
                     <h2>X-70</h2>
                     <p>Intelligence Inspires</p>
+                </div>
+                <div class="consultant">
+                    <span class="consultant-name">ZAID MURAT</span>
+                    <span class="consultant-role">CAR SALES CONSULTANT</span>
                 </div>
             </div>
             <table class="pricing-table">
@@ -541,6 +583,10 @@
                     <h2>X-90</h2>
                     <p>Intelligence Empowers</p>
                 </div>
+                <div class="consultant">
+                    <span class="consultant-name">ZAID MURAT</span>
+                    <span class="consultant-role">CAR SALES CONSULTANT</span>
+                </div>
             </div>
             <table class="pricing-table">
                 <thead class="table-header">
@@ -565,6 +611,10 @@
                 <div class="vehicle-info">
                     <h2>S70</h2>
                     <p>Intelligence Evolves</p>
+                </div>
+                <div class="consultant">
+                    <span class="consultant-name">ZAID MURAT</span>
+                    <span class="consultant-role">CAR SALES CONSULTANT</span>
                 </div>
             </div>
             <table class="pricing-table">
@@ -693,27 +743,27 @@
                 
                 <div class="testimoni-item">
                     <img src="test1.jpg" alt="Iriz">
-                    <p class="testimoni-caption">"Terima kasih Tuan Zaid, urusan loan x-50 sangat cepat dan lancar! Puas hati dengan servis beliau." - Puan Sarah H.</p>
+                    <p class="testimoni-caption">"Terima kasih Tuan Zaid, urusan loan Iriz sangat cepat dan lancar! Puas hati dengan servis beliau." - Puan Sarah H.</p>
                 </div>
                 
                 <div class="testimoni-item">
                     <img src="test2.jpg" alt="Persona">
-                    <p class="testimoni-caption">"Saga baru dah sampai! Tuan Zaid sangat membantu dari A sampai Z. Highly recommended!" - Encik Amir F.</p>
+                    <p class="testimoni-caption">"Persona baru dah sampai! Tuan Zaid sangat membantu dari A sampai Z. Highly recommended!" - Encik Amir F.</p>
                 </div>
                 
                 <div class="testimoni-item">
                     <img src="test3.jpg" alt="S70">
-                    <p class="testimoni-caption">"Persona memang padu! Tuan Zaid dapatkan interest yang paling rendah. Terbaik!" - Encik Rahman</p>
+                    <p class="testimoni-caption">"S70 memang padu! Tuan Zaid dapatkan interest yang paling rendah. Terbaik!" - Cik Lily A.</p>
                 </div>
                 
                 <div class="testimoni-item">
                     <img src="test4.jpg" alt="X90">
-                    <p class="testimoni-caption">"Walaupun saya masih muda, Tuan Zaid sabar melayan. Saga idaman dah jadi kenyataan." - Encik Ruslan</p>
+                    <p class="testimoni-caption">"Walaupun saya dah tua, Tuan Zaid sabar melayan. X90 idaman dah jadi kenyataan." - Haji Omar</p>
                 </div>
                 
                 <div class="testimoni-item">
                     <img src="test5.jpg" alt="X50">
-                    <p class="testimoni-caption">"Tak sangka X50 Flagship dapat rebate besar! Proses 10 hari saja. Mantap!" - Puan Maria.</p>
+                    <p class="testimoni-caption">"Tak sangka X50 Flagship dapat rebate besar! Proses 10 hari saja. Mantap!" - Encik Harith B.</p>
                 </div>
                 
             </div>
@@ -818,17 +868,34 @@
 
                 <div style="background:#1a1a1a;color:#fff;text-align:center;padding:20px;margin-top:30px;font-size:14px;border-top:3px solid #007bff;">
                     <p style="margin:0;">© 2025 Zaid Murat | Proton Sales Consultant | Didi Motors Sdn Bhd</p>
-                    <p style="margin:5px 0 0 0;font-size:12px;color:#aaa;" id="last-update">Kemaskini Terakhir: 02 Desember 2025</p> 
+                    <p style="margin:5px 0 0 0;font-size:12px;color:#aaa;" id="last-update">Kemaskini Terakhir: Sedang Dimuatkan...</p> 
                 </div>
 
             </div>
         </div>
 
         <script>
+            function calculateLoan() {
+                const loan = parseFloat(document.getElementById('loanAmount').value);
+                const years = parseFloat(document.getElementById('loanYears').value);
+                const interest = parseFloat(document.getElementById('interestRate').value);
+                
+                if (!loan || !years || !interest) {
+                    alert('Sila isi semua maklumat!');
+                    return;
+                }
+                
+                const interestDecimal = interest / 100;
+                // Formula: (Loan x Tahun x Interest + Loan) / (Tahun * 12)
+                const monthlyPayment = (loan * years * interestDecimal + loan) / (years * 12);
+                
+                document.getElementById('monthlyPayment').textContent = 'RM ' + monthlyPayment.toFixed(2);
+                document.getElementById('result').style.display = 'block';
+            }
+
             // Fungsi untuk memformat nombor kepada RM X,XXX.XX
             function formatRM(numStr) {
                 if (!numStr || numStr.trim() === '') return '-';
-                // Gunakan fungsi replace untuk memastikan koma tidak mengganggu parseFloat
                 const num = parseFloat(numStr.replace(/,/g, '')); 
                 if (isNaN(num)) return numStr;
                 return 'RM ' + num.toLocaleString('en-MY', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -860,6 +927,7 @@
             // Fungsi utama untuk memuatkan data JSON
             async function loadPricingData() {
                 try {
+                    // Cuba muat naik dari prices.json
                     const response = await fetch('prices.json');
                     if (!response.ok) {
                         throw new Error('Gagal memuatkan prices.json. Pastikan fail ada dan URL betul.');
@@ -883,32 +951,13 @@
 
                 } catch (error) {
                     console.error('Ralat Loading Harga:', error);
-                    alert('Gagal memuatkan data harga. Sila semak konsol untuk butiran.');
+                    // Ralat ini kekal kerana JSON tidak dimuatkan dengan betul dari server (GitHub Pages)
+                    alert('Gagal memuatkan data harga. Pastikan fail prices.json dimuat naik dengan betul ke GitHub Pages.');
                 }
             }
 
             // Panggil fungsi ini apabila DOM siap
             document.addEventListener('DOMContentLoaded', loadPricingData);
-        </script>
-        
-        <script>
-            function calculateLoan() {
-                const loan = parseFloat(document.getElementById('loanAmount').value);
-                const years = parseFloat(document.getElementById('loanYears').value);
-                const interest = parseFloat(document.getElementById('interestRate').value);
-                
-                if (!loan || !years || !interest) {
-                    alert('Sila isi semua maklumat!');
-                    return;
-                }
-                
-                const interestDecimal = interest / 100;
-                // Formula: (Loan x Tahun x Interest + Loan) / (Tahun * 12)
-                const monthlyPayment = (loan * years * interestDecimal + loan) / (years * 12);
-                
-                document.getElementById('monthlyPayment').textContent = 'RM ' + monthlyPayment.toFixed(2);
-                document.getElementById('result').style.display = 'block';
-            }
         </script>
     </div>
 </body>
